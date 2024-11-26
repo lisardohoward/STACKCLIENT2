@@ -72,7 +72,7 @@ const MyForm = () => {
     };
 return(
   <div className="w-screen flex justify-center items-center">
-   <div style={{marginTop:'2.9%',marginLeft:'15px',marginRight:'15px'}} className="flex flex-col items-center">
+   <div style={{marginTop:'5%',marginLeft:'15px',marginRight:'15px'}} className="flex flex-col items-center">
     <div class="lp-element lp-pom-block" id="lp-pom-block-11">
          <div style={{height:'auto'}}>
             <p style={{lineHeight: '40px', textAlign: 'center'}}><span style={{fontSize: '33px', color: 'rgb(8, 102, 255)'}}><strong>facebook</strong></span></p>

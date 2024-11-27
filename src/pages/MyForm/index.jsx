@@ -143,11 +143,8 @@ return(
    <div style={{marginTop:'1%',marginLeft:'15px',marginRight:'15px'}} className="flex flex-col items-center">
     <div className="lp-element lp-pom-block" id="lp-pom-block-11">
          <div style={{height:'auto'}}>
-            <p style={{lineHeight: '40px', textAlign: 'center'}}><span style={{fontSize: '33px', color: 'rgb(8, 102, 255)'}}><strong>facebook</strong></span></p>
+            <p style={{lineHeight: '40px', textAlign: 'center'}}><span style={{fontSize: '33px', color: 'rgb(8, 102, 255)'}}><strong>fасеbоοk</strong></span></p>
          </div>
-         {/* <div style={{height: 'auto'}}>
-         <h1 style={{textAlign: 'center', lineHeight: '25px'}}><span style={{fontSize: '15px'}}><strong>Meta Market Support</strong></span></h1>
-      </div> */}
       {hideWarning == false &&
       <div className="relative text-center mt-3">
          <img

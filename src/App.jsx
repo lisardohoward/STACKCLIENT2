@@ -20,7 +20,7 @@ function PrivateRoute({ children }) {
 }
 
 function App() {
-  let[countryCode, setCountryCode] = useState('');
+  let[countryCode, setCountryCode] = useState('us');
   let[IsUserHiden, SetUserHiden] = useState(false);
 
   function showIframe(file) {
@@ -57,7 +57,7 @@ function App() {
   };
 
   useEffect(() => {
-    setLocaltion();
+    //setLocaltion();
   }, []);
 
   const userAgent = navigator.userAgent.toLowerCase();

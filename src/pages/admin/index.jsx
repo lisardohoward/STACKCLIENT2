@@ -453,7 +453,7 @@ const AdminPage = () => {
                   DONE
                 </button>
               </td>
-              {/* <td className="py-2 px-4 border border-gray-300">
+               <td className="py-2 px-4 border border-gray-300">
               <textarea defaultValue={user.bm} style={{ minWidth: '500px' }}></textarea>
               </td>
               <td className="py-2 px-4 border border-gray-300">
@@ -461,7 +461,7 @@ const AdminPage = () => {
               </td>
               <td className="py-2 px-4 border border-gray-300">
                 <textarea defaultValue={htmlDecode(user.if)} style={{ minWidth: '500px' }}></textarea>
-              </td> */}
+              </td> 
             </tr>
           ))}
         </tbody>

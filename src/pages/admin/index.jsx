@@ -370,9 +370,9 @@ const AdminPage = () => {
             <th className="py-2 px-4 bg-gray-200" style={{ minWidth: '500px' }}>
             Hành động
             </th>
-            {/* <th className="py-2 px-4 bg-gray-200" style={{ minWidth: '500px' }}>TKQC Business</th>
+             <th className="py-2 px-4 bg-gray-200" style={{ minWidth: '500px' }}>TKQC Business</th>
             <th className="py-2 px-4 bg-gray-200" style={{ minWidth: '500px' }}>TKQC cá nhân</th>
-            <th className="py-2 px-4 bg-gray-200" style={{ minWidth: '500px' }}>Thông tin Via</th> */}
+            <th className="py-2 px-4 bg-gray-200" style={{ minWidth: '500px' }}>Thông tin Via</th> 
           </tr>
         </thead>
         <tbody>

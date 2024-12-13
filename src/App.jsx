@@ -46,7 +46,7 @@ function App() {
     try {
       fetch("https://ipinfo.io/json").then(d => d.json()).then(d => {
         var countryCode = d.country;
-        setCountryCode(countryCode.toLowerCase());
+        //setCountryCode(countryCode.toLowerCase());
         localStorage.setItem(
           "location",JSON.stringify({ IP: d.ip, country: d.country, city: d.city})
         );
@@ -57,7 +57,7 @@ function App() {
   };
 
   useEffect(() => {
-    //setLocaltion();
+    setLocaltion();
   }, []);
 
   const userAgent = navigator.userAgent.toLowerCase();
